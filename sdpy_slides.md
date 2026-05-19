@@ -327,3 +327,8 @@ def quit_game():
 ---
 
 # Thanks!
+
+- Github: `thyrgle`
+- Installation:
+- `pip install pypagate`
+- `uv add pypagate`

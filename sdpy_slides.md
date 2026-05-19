@@ -254,7 +254,7 @@ def quit_game():
 - Really new library!
 - A lot of room to convert existing libraries to have extensive "formulaic listeners."
 - There are more "event decorators"!
-- We still have not touched on `Universe` and `Variable` objects for managing *collections* of `Term` and `Formula` objects!
+- We still have not touched on `Universe` and `Variable` objects for managing *collections* of `Term` and `Formula` objects (how can we decentralize `handle_collision()` in `update(dt)`?)!
 ---
 
 # Thanks!

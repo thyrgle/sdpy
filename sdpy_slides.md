@@ -33,6 +33,8 @@ title: Formulaic Programming with `pypagate`
 |  4  |   100           |
 |  5  | `MEAN($A)` = 85 |
 
+---
+
 
 # A Python Program
 

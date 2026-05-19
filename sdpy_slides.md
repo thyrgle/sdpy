@@ -186,7 +186,34 @@ def update(dt: float):
 
 ## What about the `{}`?
 
-(TODO)
+- `SourceMap` is *almost* a dictionary.
+- Constructor takes dictionary of attributes and initial values.
+- Values are converted to Terms.
+- `.listen` updates the values of the `Term` attributes for a particular source.
+
+---
+
+## What about the `{}`? (Example)
+
+```py
+>>> from pypagate.source import SourceMap, exec_while
+>>> source = SourceMap({"x": 0})
+>>> @exec_while(source.x < 2, source)
+... def is_lt_two():
+...     print("x < 2")
+...
+>>> @exec_while(source.x >= 2, source)
+... def is_gte_two():
+...     print("x >= 2")
+...
+>>> for _ in range(4):
+...     source.listen({"x": source.x.unwrap() + 1})
+...
+x < 2
+x >= 2
+x >= 2
+x >= 2
+```
 
 ---
 

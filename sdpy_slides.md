@@ -153,7 +153,7 @@ def game_over():
 def update(dt: float):
     handle_collision()
 ```
-- Flattened the core logic.
+- Decentralized the core logic.
 
 ---
 ## But the World Isn't Built Like This

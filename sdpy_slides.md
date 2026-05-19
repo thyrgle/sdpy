@@ -193,7 +193,7 @@ def update(dt: float):
 
 ---
 
-## What about the `{}`? (Example)
+### What about the `{}`? (Example)
 
 ```py
 >>> from pypagate.source import SourceMap, exec_while

@@ -113,7 +113,7 @@ Collision happened!
 # Event Listeners
 
 - Event listeners are routines that are called once a specified type or kind of event occurs.
-- Popular examples from Javascript:
+- Popular example from Javascript:
 ```js
 aButton.addEventListener("click", (e) => {
   console.log("Clicked a button!");

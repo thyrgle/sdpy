@@ -255,7 +255,7 @@ for event in pygame.event.get():
 ...
 source = SourceMap({
     "quit_event": False
-    })
+})
 running = Term(True)
 ...
 while running.unwrap():

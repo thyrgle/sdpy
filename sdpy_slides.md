@@ -13,27 +13,43 @@ title: Formulaic Programming with `pypagate`
 
 # A Spreadsheet
 
-(TODO)
+|  X  |     A           |
+| :-: | :-------------: |
+|  1  |    80           |
+|  2  |    85           |
+|  3  |    95           |
+|  4  |   100           |
+|  5  | `MEAN($A)` = 90 |
 
 ---
+
+# A Spreadsheet (part 2)
+
+|  X  |     A           |
+| :-: | :-------------: |
+|  1  |    60           |
+|  2  |    85           |
+|  3  |    95           |
+|  4  |   100           |
+|  5  | `MEAN($A)` = 85 |
+
 
 # A Python Program
 
 ```py
-from statistics import mean
-
-scores = [80, 85, 95, 100]
-m = mean(scores)
-print(m)
-# Prints 90
+>>> from statistics import mean
+>>> scores = [80, 85, 95, 100]
+>>> m = mean(scores)
+>>> m
+90
 ```
 
 - What happens if we change it?
 
 ```py
-scores[0] = 75
-print(m)
-# Still 90
+>>> scores[0] = 60
+>>> m
+90
 ```
 
 - Need to recalculate!

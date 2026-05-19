@@ -82,7 +82,31 @@ title: Formulaic Programming with `pypagate`
 
 ## A Slightly More Complicated Example
 
-(TODO)
+```py
+>>> from dataclasses import dataclass
+>>> from pypagate import Term
+>>> @dataclass
+... class Point:
+...     x: Term
+...     y: Term
+...
+>>> @dataclass
+>>> class Circle:
+        x: Term
+        y: Term
+        r: Term
+...
+>>> p = Point(x=Term(0), y=Term(0))
+>>> e = Circle(x=Term(10), y=Term(10), r=Term(5))
+>>> @fire_on(((p.x ** 2 - e.x) ** 2 + (p.y ** 2 - e.y) ** 2) ** 0.5 <= e.r)
+... def collision():
+...     print("Collision happened!")
+...
+
+>>> p.x.change(7) # Note: Must use change otherwise ref is changed to new obj
+>>> p.y.change(7) # Note: Must use change otherwise ref is changed to new obj
+Collision happened!
+```
 
 ---
 

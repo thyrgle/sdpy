@@ -110,16 +110,16 @@ while True:
 ```py
 def update(dt: float):
     # Just worry about main game scene!
-    while not game_over:
-        # Player can get hurt.
-        handle_collision()
-        if player.health == 0:
-            game_over = True
-        # Other logic.
+    # Player can get hurt.
+    handle_collision()
+    if player.health == 0:
+        game_over = True
+    # Other logic.
 ```
-- A loop and an if-statment?
-- Not too bad, but I would like things *flatter!*
-- I would also not want to check the if statement each iteration of the loop.
+- Could result in a long chain of if statements if there are lots of different events!
+- I would also do not want to check the if statement each `update` call.
+- Might actually be inconvenient to *centralize* logic.
+- How can we decentralize?
 
 ---
 

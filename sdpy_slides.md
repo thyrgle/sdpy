@@ -227,7 +227,7 @@ for event in pygame.event.get():
 ```py
 ...
 source = SourceMap({
-    "quit_game": pygame.event.peek(eventtype=pygame.QUIT)
+    "quit_event": False
     })
 running = Term(True)
 ...

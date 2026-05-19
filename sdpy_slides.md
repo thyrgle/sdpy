@@ -167,7 +167,7 @@ def update(dt: float):
 
 ```py
 >>> from pypagate.source import SourceMap, exec_always
->>> source = SourceMap({{})
+>>> source = SourceMap({})
 >>> x = 0
 >>> @exec_always(source)
 ... def inc():

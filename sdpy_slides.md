@@ -123,7 +123,7 @@ aButton.addEventListener("click", (e) => {
 ```py
 @on_click(a_button)
 def clicked(e):
-    print("Clicked a button!");
+    print("Clicked a button!")
 ```
 
 - Uses a decorator to indicate the function should be fired when the click happens.

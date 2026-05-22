@@ -328,7 +328,8 @@ def quit_game():
 
 # Thanks!
 
-- Github: `thyrgle`
+- Github: `thyrgle`, Blog: `thyrgle.github.io`
+- Email: `c[last name] [at] berkeley [dot] edu`
 - Installation:
 - `pip install pypagate`
 - `uv add pypagate`

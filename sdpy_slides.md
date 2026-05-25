@@ -84,7 +84,7 @@ title: Formulaic Programming with `pypagate`
 
 ```py
 >>> from dataclasses import dataclass
->>> from pypagate import Term
+>>> from pypagate import Term, fire_on
 >>> @dataclass
 ... class Point:
 ...     x: Term
@@ -102,7 +102,6 @@ title: Formulaic Programming with `pypagate`
 ... def collision():
 ...     print("Collision happened!")
 ...
-
 >>> p.x.change(7) # Note: Must use change otherwise ref is changed to new obj
 >>> p.y.change(7) # Note: Must use change otherwise ref is changed to new obj
 Collision happened!

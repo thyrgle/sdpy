@@ -92,9 +92,9 @@ title: Formulaic Programming with `pypagate`
 ...
 >>> @dataclass
 >>> class Circle:
-        x: Term
-        y: Term
-        r: Term
+...     x: Term
+...     y: Term
+...     r: Term
 ...
 >>> p = Point(x=Term(0), y=Term(0))
 >>> e = Circle(x=Term(10), y=Term(10), r=Term(5))

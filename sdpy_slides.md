@@ -13,7 +13,7 @@ title: Formulaic Programming with `pypagate`
 
 # A Spreadsheet
 
-|  X  |     A           |
+|     |     A           |
 | :-: | :-------------: |
 |  1  |    80           |
 |  2  |    85           |
@@ -25,7 +25,7 @@ title: Formulaic Programming with `pypagate`
 
 # A Spreadsheet (part 2)
 
-|  X  |     A           |
+|     |     A           |
 | :-: | :-------------: |
 |  1  |    60           |
 |  2  |    85           |

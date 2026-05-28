@@ -146,6 +146,52 @@ while True:
 
 ---
 
+# Bad `update(dt)`
+
+```py
+def update(dt):
+    if scene == "main":
+        ...
+    elif scene == "level1":
+        ...
+    ...
+    else:
+        ...
+```
+
+- Too much in on place to read!
+
+---
+
+# An Aside: Scenes
+
+- Multiple scenes (`update(dt)`) for each `if` statement: (example from `hump.gamestate`)
+
+```lua
+local menu = {}
+local game = {}
+
+...
+
+function menu:update(dt)
+    ...
+end
+
+function game:update(dt)
+    ...
+end
+```
+
+---
+
+## But is Everything a Scene?
+
+> A scene can be a character, a weapon, a menu in the user interface, a single house, an entire level, or anything you can think of. Godot's scenes are flexible; they fill the role of both prefabs and scenes in some other game engines.
+
+- Godot (game engine) documentation
+
+---
+
 ## A Closer look at `update(dt)`
 
 ```py
@@ -157,7 +203,7 @@ def update(dt: float):
         game_over = True
     # Other logic.
 ```
-- Could result in a long chain of if statements if there are lots of different events!
+- Could still result in a long chain of if statements if there are lots of different events!
 - I would also do not want to check the if statement each `update` call.
 - Might actually be inconvenient to *centralize* logic.
 - How can we decentralize?
